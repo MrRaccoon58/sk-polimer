@@ -1,0 +1,44 @@
+//перевод пикселей в rem
+@function rem($px) {
+    @return $px / 16px+0rem;
+}
+
+//адаптив
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+
+//шрифты
+
+@mixin OpenSans ($style: normal) {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    @if $style == light {
+        font-weight: 300;
+    }
+    @if $style == medium {
+        font-weight: normal;
+    }
+    @if $style == bold {
+        font-weight: 700;
+    }
+}
+@mixin Merriweather ($style: normal) {
+    font-family: 'Merriweather', Times, serif;
+    @if $style == light {
+        font-weight: 300;
+    }
+    @if $style == medium {
+        font-weight: normal;
+    }
+    @if $style == bold {
+        font-weight: 700;
+    }
+}

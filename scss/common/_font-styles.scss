@@ -1,0 +1,4 @@
+.main-title {
+    @include OpenSans(bold);
+    text-transform: uppercase;
+}
