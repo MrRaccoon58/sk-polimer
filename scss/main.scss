@@ -1,0 +1,21 @@
+//variables
+$color: #000;
+
+//config
+@import 'config/_mixins';
+@import 'config/_base';
+
+//common
+@import 'common/_button';
+@import 'common/_modal';
+@import 'common/_font-styles';
+@import 'common/_normalize';
+
+//layout
+
+@import 'layout/_container';
+@import 'layout/_section';
+@import 'layout/_start';
+
+//widgets
+@import 'widgets/owl.scss'
