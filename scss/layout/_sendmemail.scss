@@ -1,0 +1,43 @@
+.sendmemail__overlay {
+    // background-color: lighten($color: $gold, $amount: 15);
+    background-color: $paper;
+    border-radius: rem(3px);
+    padding: rem(5px) rem(5px) rem(10px) rem(5px);
+    height: rem(80px);
+    display: flex;
+}
+
+.sendmemail__input {
+    border: 0;
+    background-color: $paper;
+    border-top-left-radius: rem(3px);
+    border-bottom-left-radius: rem(3px);
+    width: 100%;
+    font-size: rem(40px);
+    line-height: rem(30px);
+    padding: rem(5px) rem(20px) rem(0px) rem(20px);
+    color: $gold;
+    &::-webkit-input-placeholder{
+        color: darken($color: $paper, $amount: 10)
+    }
+    &::selection {
+        background-color: darken($color: $gold, $amount: 10);
+    }
+    @include tablets {
+        font-size: rem(35px);
+        padding: 0 rem(15px);   
+    }   
+}
+
+.sendmemail__button {
+    
+    @include tablets {
+        font-size: rem(20px);
+        padding: 0 rem(15px);
+        
+    }
+    @include phones {
+        font-size: rem(16px);
+        padding: 0 rem(5px);
+    }
+}

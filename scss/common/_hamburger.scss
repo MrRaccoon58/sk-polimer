@@ -1,0 +1,36 @@
+.hamburger__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    width: rem(25px);
+    height: rem(25px);
+    position: relative;
+    display: none;
+    // z-index: 10;
+    @include tablets {
+        display: flex;
+    }
+}
+.hamburger__bars {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+
+.hamburger__bar {
+    display: inline-block;
+    background-color: $white;
+    width: 100%;
+    height: rem(5px);
+    border-radius: rem(5px);
+    position: relative;
+}

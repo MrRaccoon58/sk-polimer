@@ -1,0 +1,6 @@
+.logo {
+    width: rem(150px);
+    @include phones {
+        width: rem(100px);
+    }
+}

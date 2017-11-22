@@ -1,0 +1,26 @@
+.partners {
+
+    display: flex;
+    align-items: center;
+}
+
+.partners__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.partners__item{
+    width: 50%;
+    display: flex;
+    justify-content: center;    
+    outline: 1px solid $gold;
+    flex-direction: column;
+}
+
+.partners__pic {
+    height: 150px;
+    border: 1px solid red;
+}
+
+.partners__desc {
+    
+}
