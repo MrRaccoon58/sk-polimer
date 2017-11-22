@@ -1,17 +1,5 @@
 .start {
-    background-image: url('../img/start__bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($dark, .95);
-    }
+    @include bg('start__bg.jpg');
 }
 
 .start__content {

@@ -15,6 +15,31 @@
         @content;
     }
 }
+//bg and hover
+@mixin bg($bg) {
+    background-image: url('../img/' + $bg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($dark, .95);
+    }
+}
+
+//goldline 
+@mixin goldline {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 80%;
+    border-left: 1px solid $gold;
+}
 
 //шрифты
 
