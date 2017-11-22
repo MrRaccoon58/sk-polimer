@@ -18,9 +18,14 @@
     <div class="wrapper">
         <section class="section start">
             <div class="container start__container">
-                <div class="header">
-                    <div class="header__logo"><a class="header__logo-link" href="https://sibkraspolimer.ru/" target="_blank"><img class="logo" src="img/logo.svg"></a></div>
-                    <div class="header__buttons">
+
+                <header class="header">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="https://sibkraspolimer.ru/" target="_blank">
+                            <img class="logo" src="img/logo.svg">
+                        </a>
+                    </div>
+                    <nav class="header__buttons">
                         <ul class="header__list">
                             <li class="header__item">
                                 <a href="" class="header__link">почему мы</a>
@@ -35,28 +40,64 @@
                                 <a href="" class="header__link">партнеры</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                     <div class="header__contacts contacts">
-                        <div class="header__phone">.header__phone-pic</div>
-                        <div class="header__mail"></div>
-                        <div class="socials">
-                            <ul class="socials__list">
-                                <li class="socials__item">
-                                    <a href="#" class="socials__link"></a>
-                                </li>
-                                <li class="socials__item">
-                                    <a href="#" class="socials__link"></a>
-                                </li>
-                                <li class="socials__item">
-                                    <a href="#" class="socials__link"></a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="contacts__phone-list">
+                            <li class="contacts__phone-item">
+                                <div class="contacts__phone-ico fa fa-phone" aria-hidden="true"></div>
+                                <a class="contacts__phone-link">+7 (123) 456-789</a>
+                            </li>
+                            <li class="contacts__phone-item">
+                                <div class="contacts__phone-ico fa fa-phone" aria-hidden="true"></div>
+                                <a class="contacts__phone-link">+7 (123) 456-789</a>
+                            </li>
+                        </ul>
+                        <ul class="contacts__mail-list">
+                            <li class="contacts__mail-item">
+                                <div class="contacts__mail-ico fa fa-envelope" aria-hidden="true"></div>
+                                <a class="contacts__mail-link">sibkraspolimer@skpolimer.ru</a>
+                            </li>
+                            <li class="contacts__mail-item">
+                                <div class="contacts__mail-ico fa fa-envelope" aria-hidden="true"></div>
+                                <a class="contacts__mail-link">sibkraspolimer@skpolimer.ru</a>
+                            </li>
+                        </ul>
+
+                        <ul class="contacts__socials-list">
+                            <li class="contacts__socials-item">
+                                <a href="#" class="contacts__socials-link fa fa-vk" aria-hidden="true"></a>
+                            </li>
+                            <li class="contacts__socials-item">
+                                <a href="#" class="contacts__socials-link fa fa-facebook" aria-hidden="true"></a>
+                            </li>
+                            <li class="contacts__socials-item">
+                                <a href="#" class="contacts__socials-link fa fa-google-plus" aria-hidden="true"></a>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="hamburger__wrap">
+                    <a href="#" class="hamburger">
+                        <div class="hamburger__bars">
+                            <div class="hamburger__bar hamburger__bar--1"></div>
+                            <div class="hamburger__bar hamburger__bar--2"></div>
+                            <div class="hamburger__bar hamburger__bar--3"></div>
+                        </div>
+                    </a>
                 </div>
+                </header>
                 <div class="content start__content">
-                        <h1 class="vh main-title">Дражные ковры для золотодобычи</h1>
-                       
+                    <div class="content__text">
+                            <h1 class="main-title">Дражные ковры для золотодобычи</h1>
+                            <p class="main-subtitle">Мы производим только лучшие коврики для добычи золота, для драг и промышленных установок</p>
+                    </div>
+                    <form class="sendmemail__form" action="">
+                        <div class="sendmemail">
+                            <div class="sendmemail__overlay">
+                                <input placeholder="Почта" class="input sendmemail__input" type="text">
+                                <button class="button sendmemail__button">заказать каталог</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -91,6 +132,7 @@
             </div>
         </section>
     </div>
+    <!-- <div class="header__overlay"></div> -->
 </body>
 
 </html>

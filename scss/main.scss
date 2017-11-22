@@ -3,22 +3,24 @@ $white: #fff;
 $dark: #28292d;
 $gold: #c8a774;
 $paper: #e7e3d9;
+$shadow: #95a5a6;
 //$var darken($color: $dark, $amount: 15); - цвет темнее на %
 
 //resolutions
-$tablets: 768px;
-$phones: 480px;
+$tablets: 1020px;
+$phones: 490px;
 
 //config
 @import 'config/_mixins';
 @import 'config/_base';
 @import 'config/_fonts';
-@import 'config/_normalize';
+
 
 //common
 @import 'common/_button';
 @import 'common/_modal';
 @import 'common/_font-styles';
+@import 'common/_hamburger';
 
 //layout
 
@@ -29,8 +31,12 @@ $phones: 480px;
 @import 'layout/_content';
 @import 'layout/_logo';
 @import 'layout/_socials';
+@import 'layout/_contacts';
+@import 'layout/_sendmemail';
 
 //widgets
 @import 'widgets/_owl.scss';
 //widgets
 @import 'misc/_svgstyles.scss';
+
+@import 'config/_normalize';

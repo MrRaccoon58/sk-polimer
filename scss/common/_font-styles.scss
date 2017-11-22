@@ -1,4 +1,22 @@
 .main-title {
-    @include OpenSans(bold);
+    @include OpenSans(light);
     text-transform: uppercase;
+    color: $gold;
+    font-size: rem(60px);
+    text-align: center;
+    @include tablets {
+        font-size: rem(48px);
+        
+    }
+    @include phones {
+        font-size: rem(30px);
+        
+    }
+}
+.main-subtitle {
+    @include OpenSans(light);
+    text-transform: uppercase;
+    color: $paper;
+    text-align: center;
+    margin: rem(10px) 0;
 }

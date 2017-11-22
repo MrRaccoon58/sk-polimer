@@ -3,12 +3,16 @@
     position: relative;
     min-height: 100%;
     overflow: hidden;
+
+}
+::selection {
+    background-color: lighten($color: $gold, $amount: 10);
 }
 
 html {
     font-size: rem(16px);
     @include tablets {
-        font-size: rem(15px);
+        font-size: rem(14px);
     }
     @include phones {
         font-size: rem(13px);
@@ -25,9 +29,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    color: $gold;
+    color: $paper;   
     @include OpenSans();
     background-color: $dark;
+
+   
 }
 
 h1,
@@ -70,7 +76,7 @@ footer {
 }
 a {
     text-decoration: none;
-    color: $white;
+    color: $paper;
 }
 
 textarea {
