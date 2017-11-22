@@ -3,6 +3,7 @@
     min-height: rem(650px);
     display: flex;
     position: relative;
+    overflow: hidden;
     
     &_centered {
         justify-content: center;
